@@ -60,6 +60,8 @@
       <div class="btns">
         <a class="btn" style="background:#e11d48;border-color:#e11d48" href="short3_live_simulation.mp4" download="03_넥서스원PRO_실시간_시뮬레이션_데모_쇼츠.mp4">⬇️ 시뮬레이션 MP4 저장</a>
         <a class="btn" href="thumb3_sim.png" download="썸네일_시뮬레이션.png">🖼️ 썸네일 저장</a>
+        <a class="btn" href="sim/" target="_blank" rel="noopener">🔗 단독 링크 열기</a>
+        <button class="btn" data-url="https://heebonpark.github.io/sh-v6m9p2/sim/">📋 단독 링크 복사</button>
       </div>
       <div>
         <div class="sec-lbl"><span>📌 유튜브 쇼츠 제목</span><button class="mini-cp" data-cp="t3">제목 복사</button></div>
@@ -97,6 +99,8 @@
       <div class="btns">
         <a class="btn btn-p" href="short1_bid_automation.mp4" download="01_입찰자동화_투찰시뮬레이터_쇼츠.mp4">⬇️ 쇼츠1 MP4 다운로드</a>
         <a class="btn" href="thumb1.png" download="썸네일_쇼츠1.png">🖼️ 썸네일 저장</a>
+        <a class="btn" href="bid/" target="_blank" rel="noopener">🔗 단독 링크 열기</a>
+        <button class="btn" data-url="https://heebonpark.github.io/sh-v6m9p2/bid/">📋 단독 링크 복사</button>
       </div>
       <div>
         <div class="sec-lbl"><span>📌 유튜브 쇼츠 제목</span><button class="mini-cp" data-cp="t1">제목 복사</button></div>
@@ -141,6 +145,8 @@
       <div class="btns">
         <a class="btn btn-ok" href="short2_nexusone_4domain.mp4" download="02_넥서스원PRO_4대도메인_쇼츠.mp4">⬇️ 쇼츠2 MP4 다운로드</a>
         <a class="btn" href="thumb2.png" download="썸네일_쇼츠2.png">🖼️ 썸네일 저장</a>
+        <a class="btn" href="map/" target="_blank" rel="noopener">🔗 단독 링크 열기</a>
+        <button class="btn" data-url="https://heebonpark.github.io/sh-v6m9p2/map/">📋 단독 링크 복사</button>
       </div>
       <div>
         <div class="sec-lbl"><span>📌 유튜브 쇼츠 제목</span><button class="mini-cp" data-cp="t2">제목 복사</button></div>
@@ -182,6 +188,12 @@ document.querySelectorAll('[data-cp]').forEach(b => {
     if (!el) return;
     navigator.clipboard?.writeText(el.textContent.trim());
     toast('📋 클립보드에 복사되었습니다!');
+  });
+});
+document.querySelectorAll('[data-url]').forEach(b => {
+  b.addEventListener('click', () => {
+    navigator.clipboard?.writeText(b.dataset.url);
+    toast('🔗 단독 링크가 복사되었습니다!');
   });
 });
 </script>

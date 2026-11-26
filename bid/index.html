@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+<meta name="referrer" content="no-referrer" />
+<title>넥서스원 PRO · 쇼츠 1 입찰자동화 & 투찰 시뮬레이터</title>
+<style>
+  :root{--bg:#0b1120;--card:#111827;--ink:#f8fafc;--muted:#94a3b8;--line:#1f2937;--acc:#6366f1}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  header{position:sticky;top:0;z-index:20;background:rgba(17,24,39,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:13px 16px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+  .badge{padding:3px 9px;border-radius:999px;background:#312e81;color:#c7d2fe;font-size:11px;font-weight:800}
+  .wrap{max-width:520px;margin:18px auto 54px;padding:0 14px}
+  .card{background:var(--card);border:1px solid #6366f1;box-shadow:0 0 0 1px rgba(99,102,241,.35);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:14px}
+  h1{margin:0;font-size:18px;font-weight:800}
+  .meta{font-size:12px;color:var(--muted)}
+  .vwrap{position:relative;width:100%;max-width:360px;margin:0 auto;aspect-ratio:9/16;border-radius:14px;overflow:hidden;border:2px solid #6366f1;background:#000}
+  video{width:100%;height:100%;object-fit:contain;display:block}
+  .btns{display:flex;flex-wrap:wrap;gap:8px}
+  .btn{flex:1;min-width:130px;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:#1e293b;color:#fff;font-size:12.5px;font-weight:800;cursor:pointer;text-align:center;text-decoration:none}
+  .btn-p{background:var(--acc);border-color:var(--acc)}
+  .copy-box{background:#0f172a;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:12px;color:#cbd5e1;white-space:pre-wrap;max-height:170px;overflow:auto}
+  .sec-lbl{font-size:11.5px;font-weight:800;color:#a5b4fc;margin-bottom:4px;display:flex;justify-content:space-between;align-items:center}
+  .mini-cp{padding:4px 10px;border-radius:6px;border:1px solid #475569;background:#1e293b;color:#fff;font-size:11px;font-weight:700;cursor:pointer;text-decoration:none}
+  .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#10b981;color:#fff;padding:10px 18px;border-radius:999px;font-size:13px;font-weight:800;opacity:0;pointer-events:none;transition:.2s;z-index:99}
+  .toast.on{opacity:1}
+</style>
+</head>
+<body>
+<header>
+  <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+    <strong style="font-size:15px">🎬 쇼츠 1 · 입찰자동화 & 투찰 시뮬레이터</strong>
+    <span class="badge">53.6초 · 9:16 FHD</span>
+  </div>
+  <div style="display:flex;gap:6px">
+    <button class="mini-cp" id="btnCopyUrl">🔗 링크 복사</button>
+    <a class="mini-cp" href="https://heebonpark.github.io/nx1-p7k9v3/?tab=bid" target="_blank" rel="noopener">🚀 앱 열기</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <div>
+      <h1>입찰자동화 & 투찰 시뮬레이터 홍보 쇼츠</h1>
+      <div class="meta">53.6초 · 1080×1920 (9:16) · 11.4 MB · 남성 신경망 TTS · 건설/보안/시설 실무자 타깃</div>
+    </div>
+    <div class="vwrap">
+      <video id="vid" controls playsinline preload="metadata" poster="../thumb1.png">
+        <source src="../short1_bid_automation.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="btns">
+      <a class="btn btn-p" href="../short1_bid_automation.mp4" download="01_입찰자동화_투찰시뮬레이터_쇼츠.mp4">⬇️ 쇼츠1 MP4 저장</a>
+      <a class="btn" href="../thumb1.png" download="썸네일_쇼츠1.png">🖼️ 썸네일 저장</a>
+    </div>
+    <div>
+      <div class="sec-lbl"><span>📌 유튜브 쇼츠 제목</span><button class="mini-cp" data-cp="t">제목 복사</button></div>
+      <div class="copy-box" id="t">매월 20만원 입찰 유료사이트? 월 서버비 0원 평생 소장하는 법 ⚡ #나라장터 #공공입찰</div>
+    </div>
+    <div>
+      <div class="sec-lbl"><span>📝 유튜브 설명 / 틱톡 캡션 + 해시태그</span><button class="mini-cp" data-cp="c">캡션 복사</button></div>
+      <div class="copy-box" id="c">매월 10~30만원 입찰 사이트 구독료, 아직도 내고 계신가요? 😭
+이제 '월 서버비 0원 평생 소장형' 넥서스원 PRO로 3분 만에 끝내세요!
+
+✅ 오늘 올라온 나라장터 입찰 전수 수집 (누락 0% · 취소공고 자동 숨김)
+✅ 공고문(.pdf/.hwpx) · 과업지시서 · 공내역서 원클릭 다운로드
+✅ 사정률(-3%~+3%) × 낙찰하한율 최적 투찰가 자동 시뮬레이터
+✅ 실제 과거 낙찰률·경쟁률 분석 + 지역 협력 건설사 TOP 5 자동 매칭
+✅ 내부 결재용 A4 1페이지 수주 검토서 + 캘린더(.ics) 1초 출력
+
+👇 라이브 데모 & 크몽 맞춤 구축 문의는 고정댓글 / 프로필 링크!
+
+#나라장터 #공공입찰 #입찰정보 #건설입찰 #투찰가계산 #입찰자동화 #사전규격 #업무자동화 #B2B영업 #크몽 #넥서스원PRO</div>
+    </div>
+    <div>
+      <div class="sec-lbl"><span>💬 고정댓글 (전환용)</span><button class="mini-cp" data-cp="p">고정댓글 복사</button></div>
+      <div class="copy-box" id="p">🚀 [월 서버비 0원] 넥서스원 PRO 입찰 자동화 플랫폼
+✔ STANDARD (입찰 실무형): 29만원
+✔ DELUXE (입찰 + 전국 기업 12만사 + 낙찰분석 + A4검토서): 59만원
+✔ PREMIUM (4대 도메인 + 카톡 09시/17시 자동알림봇 + 화이트라벨): 119만원
+👉 문의 / 라이브 데모: 프로필 링크 확인</div>
+    </div>
+  </section>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('on');
+  clearTimeout(window._tt); window._tt = setTimeout(()=>t.classList.remove('on'), 2000);
+}
+document.querySelectorAll('[data-cp]').forEach(b => {
+  b.addEventListener('click', () => {
+    const el = document.getElementById(b.dataset.cp);
+    if (!el) return;
+    navigator.clipboard?.writeText(el.textContent.trim());
+    toast('📋 클립보드에 복사되었습니다!');
+  });
+});
+document.getElementById('btnCopyUrl').addEventListener('click', () => {
+  navigator.clipboard?.writeText(location.href.split('?')[0]);
+  toast('🔗 단독 링크가 복사되었습니다!');
+});
+</script>
+</body>
+</html>
